@@ -1,73 +1,61 @@
 This project contains two data analytics engagements:
 
-Duka Electronics Sales Analysis
+1. Duka Electronics Sales Analysis
+2. Mobile Money Agent Network Data Cleaning and Analysis
 
-Mobile Money Agent Network Data Cleaning and Analysis
+---
 
-Engagement 1: Duka Electronics
+## Engagement 1: Duka Electronics
 
 This engagement analyses sales data from five branches between January and June 2026.
 
-Executive Summary
+### Executive Summary
 
-The dataset contains 1,000 sales orders from five branches between January and June 2026.
+- The dataset contains 1,000 sales orders.
+- Nairobi recorded the highest revenue of KES 26,106,100.
+- Laptops generated KES 41,535,000 in revenue.
+- Tablets recorded 691 units sold.
+- Weekdays recorded 723 orders, while weekends recorded 277 orders.
 
-Nairobi recorded the highest revenue of KES 26,106,100 from 376 orders.
+### Files
 
-Laptops generated the highest product revenue of KES 41,535,000.
+- duka_sales_exploration.ipynb
+- excel/duka_branch_summary.xlsx
+- outputs/premium_online_coast_capital.csv
 
-Tablets recorded the highest sales volume, with 691 units sold.
+---
 
-Weekdays recorded 723 orders, while weekends recorded 277 orders.
-
-Files
-
-duka_sales_exploration.ipynb – Sales data exploration and analysis.
-
-excel/duka_branch_summary.xlsx – Branch revenue summary, region lookup and PivotTable.
-
-outputs/premium_online_coast_capital.csv – Premium online sales from Nairobi and Mombasa.
-
-Engagement 2: Mobile Money Agent Network
+## Engagement 2: Mobile Money Agent Network
 
 This engagement focuses on cleaning and analysing mobile money agent transactions.
 
-Data Overview
+### Data Overview
 
-Agents before cleaning: 20 rows.
+- Agents before cleaning: 20 rows.
+- Transactions before cleaning: 612 rows.
+- Transactions after removing duplicates: 600 rows.
+- Duplicate transactions removed: 12.
 
-Transactions before cleaning: 612 rows.
+### Files
 
-Transactions after removing duplicates: 600 rows.
+- agent_cleanup.ipynb
+- cleaning_pipeline.py
+- outputs/agent_transactions_clean.csv
 
-Duplicate transactions removed: 12.
+---
 
-Files
+## Running the Notebooks
 
-agent_cleanup.ipynb – Data quality checks, cleaning, merging and analysis.
+1. Open Google Colab.
+2. Upload the project files.
+3. Run generate_data.py.
+4. Open and run duka_sales_exploration.ipynb.
+5. Open and run agent_cleanup.ipynb.
 
-cleaning_pipeline.py – Function used to clean agent transaction data.
+---
 
-outputs/agent_transactions_clean.csv – Final cleaned transaction dataset.
+## Requirements
 
-Running the Notebooks
-
-Open Google Colab.
-
-Upload the project files.
-
-Run generate_data.py to generate the datasets.
-
-Open duka_sales_exploration.ipynb and run all cells.
-
-Open agent_cleanup.ipynb and run all cells.
-
-Requirements
-
-The project uses Python and the following libraries:
-
-pandas
-
-numpy
-
-openpyxl
+- pandas
+- numpy
+- openpyxl
